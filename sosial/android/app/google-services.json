@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "395696621928",
+    "firebase_url": "https://latihan-dbceb.firebaseio.com",
+    "project_id": "latihan-dbceb",
+    "storage_bucket": "latihan-dbceb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395696621928:android:655ed15e491c9f1d86eedd",
+        "android_client_info": {
+          "package_name": "com.bps.sosial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395696621928-csko1qvdt9tktv53mvic4pi2g3nts4tl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXrprjO9PG5zDhN_iXYzB8jeSno2yhRSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395696621928-csko1qvdt9tktv53mvic4pi2g3nts4tl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
