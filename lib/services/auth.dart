@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:sosial/models/user.dart';
-import 'package:sosial/screens/services/database.dart';
+import 'package:sosial/services/database.dart';
 
 class AuthService {
 
@@ -8,11 +8,11 @@ final FirebaseAuth _auth = FirebaseAuth.instance;
 
 // create user obj based on firebaseuser
 
-User _userFromfirebaseUser(FirebaseUser user) {
-  return user != null ? User(uid: user.uid) : null;
+Userprofile _userFromfirebaseUser(FirebaseUser user) {
+  return user != null ? Userprofile(uid: user.uid) : null;
 }
 //auth changed user auth
-Stream<User>get user{
+Stream<Userprofile>get user{
   return _auth.onAuthStateChanged
     .map(_userFromfirebaseUser); 
 }

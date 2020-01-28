@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sosial/screens/services/auth.dart';
+import 'package:sosial/services/auth.dart';
 import 'package:sosial/shared/constants.dart';
 import 'package:sosial/shared/loading.dart';
 class SignIn extends StatefulWidget {
