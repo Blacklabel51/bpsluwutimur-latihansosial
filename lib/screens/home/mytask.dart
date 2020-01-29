@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:sosial/authenticate/sign_in.dart';
 import 'package:sosial/models/user.dart';
 import 'package:sosial/screens/home/inputdata.dart';
 import 'package:sosial/screens/home/settings.dart';
@@ -52,7 +53,10 @@ class _MyTaskState extends State<MyTask> {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   InkWell (
-                    onTap: (){_auth.signout();},
+                    onTap: (){_auth.signout();
+                    Navigator.of(context).push(
+                      new MaterialPageRoute(builder: (BuildContext context)=>new SignIn())
+                    );},
                   child: Column(
                   children: <Widget>[
                     Icon(Icons.check),
