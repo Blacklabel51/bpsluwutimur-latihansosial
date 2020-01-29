@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sosial/screens/home/mytask.dart';
 import 'package:sosial/screens/home/settings.dart';
 import 'package:sosial/services/auth.dart';
 import 'package:sosial/services/database.dart';
@@ -43,7 +44,7 @@ class Home extends StatelessWidget {
             )
           ],
         ),
-        body: Userlist(),
+        body: MyTask(),
       ),
     );
   }

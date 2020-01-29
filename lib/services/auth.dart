@@ -49,7 +49,7 @@ Future registerEmail(String email, String password)async{
     FirebaseUser user  = result.user;
 
     //create a new document for user with uid
-    await DatabaseService(uid: user.uid).updateUserData('0', 'new crew member', 100);
+    await DatabaseService(uid: user.uid).updateUserData('Nama Anda','Laki-laki','Mitra BPS');
     return _userFromfirebaseUser(user);
   } catch (e) {
     print(e.toString());

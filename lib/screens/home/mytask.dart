@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sosial/services/database.dart';
-import 'package:sosial/shared/constants.dart';
 import 'package:sosial/models/user.dart';
+import 'package:sosial/services/database.dart';
 import 'package:sosial/shared/loading.dart';
+import 'package:sosial/shared/constants.dart';
 
-class SettingForm extends StatefulWidget {
+class MyTask extends StatefulWidget {
+
+
   @override
-  _SettingFormState createState() => _SettingFormState();
+  _MyTaskState createState() => _MyTaskState();
 }
 
-class _SettingFormState extends State<SettingForm> {
-  
+class _MyTaskState extends State<MyTask> {
+
   final _formKey = GlobalKey<FormState>();
   final List<String> jeniskelamin = ['Laki-laki', 'Perempuan'];
   final List<String> jabatan = ['Organik BPS', 'Mitra BPS'];

@@ -11,8 +11,6 @@ class UserData{
   final String jeniskelamin;
   final String jabatan;
 
-  UserData({
-    this.uid, this.name, this.jeniskelamin, this.jabatan
-  });
+  UserData({this.uid, this.name, this.jeniskelamin, this.jabatan});
 
 }

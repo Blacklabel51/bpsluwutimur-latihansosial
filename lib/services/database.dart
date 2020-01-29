@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:sosial/models/user.dart';
 import 'package:sosial/models/usersosial.dart';
+
+
 class DatabaseService{
 
 final String uid;
@@ -9,11 +11,11 @@ DatabaseService({this.uid});
 //collection reference
 final CollectionReference bpskoleksi  = Firestore.instance.collection('users');
 
-Future updateUserData (String sugars, String name, int strength) async {
+Future updateUserData (String name, String jeniskelamin,  String jabatan) async {
   return await bpskoleksi.document(uid).setData({
-    'sugars':sugars,
+    'jeniskelamin':jeniskelamin,
     'name':name,
-    'strength':strength,
+    'jabatan':jabatan,
   });
 }
 
@@ -33,9 +35,9 @@ List<User> _userFromSnapshot(QuerySnapshot snapshot){
   UserData _userDataFromSnapshot(DocumentSnapshot snapshot){
     return  UserData(
       uid: uid,
-      name: snapshot.data['name'],
-      jeniskelamin: snapshot.data['jeniskelamin'],
-      jabatan: snapshot.data['jabatan'],
+      name: snapshot.data['name']?? '',
+      jeniskelamin: snapshot.data['jeniskelamin']??'',
+      jabatan: snapshot.data['jabatan']??'',
     );
   }
 

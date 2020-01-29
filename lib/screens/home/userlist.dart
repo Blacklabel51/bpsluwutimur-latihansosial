@@ -12,7 +12,7 @@ class _UserlistState extends State<Userlist> {
   @override
   Widget build(BuildContext context) {
 
-    final sosial =Provider.of<List<User>>(context);
+    final sosial =Provider.of<List<User>>(context) ?? [];
     //print(sosial.documents);
 
     // sosial.forEach((sosial){
